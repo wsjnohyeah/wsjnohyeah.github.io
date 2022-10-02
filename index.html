@@ -199,7 +199,7 @@
         <div class="col-1" style="margin-left: 30px;"></div>
         <div class="col-auto" style="font-size: 40px;">🍫</div>
         <div class="col-auto">
-            <h3 class="item">Not Too Sweet Chocolate Chocolate Fondue</h3>
+            <h3 class="item">Not Too Sweet Chocolate Fondue</h3>
         </div>
     </div>
     <div class="placeholder"></div>
@@ -209,6 +209,36 @@
         </div>
     </div>
 </body>
+<div class="modal fade" id="termModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Terms and Conditions</h5>
+            </div>
+            <div class="modal-body">
+                This signature tasting menu is intented to serve Hannah Mei only on her first year anniversary with Ethan Hu.
+                <br><br>The cost of the tasting menu is 100,000 kissies. Pay later available. Minimum kissies due per day is 20 if you choose the buy now pay later option.
+                <div class="row">
+                    <div class="col-auto">
+                        <img style="height: 130px;" src="terms.gif" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="modal-dismiss" class="btn btn-primary">I Understand and Agree to the Terms</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('#termModal').modal('show');
+    });
+    $('#modal-dismiss').click(function() {
+        $('#termModal').modal('hide');
+    })
+</script>
 
 </html>
